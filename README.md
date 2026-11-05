@@ -110,6 +110,17 @@ UTF-8로 한글을 그대로 저장합니다. 최초 실행 시 파일이 없으
 퀴즈 추가·재실행 검증은 프로젝트의 임시 복사본에서 진행해 제출 폴더의 기본 상태를 오염시키지 않았습니다.
 Ctrl+C, 쓰기 실패, 복구용 원본 보관 실패는 unittest에서 해당 예외를 주입해 확인했으며, 실제 사용자 비밀번호를 입력하는 실험은 아닙니다.
 
+### 실행 결과 화면
+
+다음은 **위 실제 실행 로그를 VS Code에서 열어 캡처한 화면**입니다. 방금 터미널에 직접 입력 중인 화면으로 표시하지 않습니다.
+명령과 입력의 원문은 텍스트/JSON 로그에서 확인하고, 화면은 출력 결과를 읽기 쉽게 확인하는 보조 증거로 사용합니다.
+
+![메뉴와 입력 오류 처리의 실제 결과 로그](docs/screenshots/menu.png)
+![퀴즈 등록과 저장의 실제 결과 로그](docs/screenshots/add_quiz.png)
+![추가 후 7개 목록의 실제 결과 로그](docs/screenshots/list.png)
+![문제 풀이와 정답 판정의 실제 결과 로그](docs/screenshots/play.png)
+![점수 갱신과 조회의 실제 결과 로그](docs/screenshots/score.png)
+
 ## 6. Git 이력과 협업 실습
 
 기능별로 실제 소스를 변경하며 기록했습니다. 퀴즈 풀기는 `codex/quiz-play`에서 개발하고 `main`으로 병합했습니다.
@@ -123,7 +134,12 @@ git status
 파일 저장은 파일 내용 반영, `git add`는 다음 기록에 담을 변경 선택, `git commit`은 로컬 이력,
 `git push`는 원격 GitHub로 이력을 올리는 동작입니다. `clone`은 별도 복제, `pull`은 기존 작업 폴더로 최신 변경을 가져옵니다.
 
-복제·가져오기 실습 결과는 완료 후 이 문서에 실제 로그로 연결합니다.
+[실제 복제·가져오기 로그](evidence/06_git_workflow.txt)에서 `git clone` → 복제본 README 수정·commit·push → 원래 폴더의 `git pull --ff-only` → 문장 반영 확인을 볼 수 있습니다.
+`--ff-only`는 이력이 갈라져 있으면 임의 병합하지 않고 중단하는 옵션입니다.
+로그의 `Fast-forward`는 원격의 새 커밋을 순서대로 가져와 작업 폴더를 갱신했다는 뜻입니다.
+같은 로그에 브랜치 병합 그래프, Git 작성자, 원격 주소, Python/Git 버전이 있습니다.
+
+![실제 Git 그래프와 Python 및 Git 환경 로그 화면](docs/screenshots/git_graph_and_environment.png)
 
 ## 7. 평가에서 설명하기
 

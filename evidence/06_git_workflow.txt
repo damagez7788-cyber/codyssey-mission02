@@ -1,0 +1,97 @@
+
+$ git diff --check 
+
+$ git add . 
+
+$ git commit -m Docs:\ 실행\ 검증\ 로그와\ 쉬운\ 설명\ 및\ 데이터\ 구조\ 문서화 
+[main aebb1e9] Docs: 실행 검증 로그와 쉬운 설명 및 데이터 구조 문서화
+ 13 files changed, 500 insertions(+), 1 deletion(-)
+ create mode 100644 .gitattributes
+ create mode 100644 evidence/01_tests.json
+ create mode 100644 evidence/01_tests.txt
+ create mode 100644 evidence/02_add_play_score.json
+ create mode 100644 evidence/02_add_play_score.txt
+ create mode 100644 evidence/03_restart.json
+ create mode 100644 evidence/03_restart.txt
+ create mode 100644 evidence/04_eof.json
+ create mode 100644 evidence/04_eof.txt
+ create mode 100644 evidence/05_corrupt_recovery.json
+ create mode 100644 evidence/05_corrupt_recovery.txt
+ create mode 100644 evidence/verification.json
+
+$ git push origin main 
+To https://github.com/damagez7788-cyber/codyssey-mission02.git
+   a203057..aebb1e9  main -> main
+
+$ git push origin codex/quiz-play 
+remote: 
+remote: Create a pull request for 'codex/quiz-play' on GitHub by visiting:        
+remote:      https://github.com/damagez7788-cyber/codyssey-mission02/pull/new/codex/quiz-play        
+remote: 
+To https://github.com/damagez7788-cyber/codyssey-mission02.git
+ * [new branch]      codex/quiz-play -> codex/quiz-play
+
+$ git clone https://github.com/damagez7788-cyber/codyssey-mission02.git /mnt/c/Users/damag/Documents/ChatGPT/코디세이/연습작업/mission02-clone 
+Cloning into '/mnt/c/Users/damag/Documents/ChatGPT/코디세이/연습작업/mission02-clone'...
+
+$ git config user.name 강준권 
+
+$ git config user.email 350343401+damagez7788-cyber@users.noreply.github.com 
+
+$ git add README.md 
+
+$ git commit -m Docs:\ 별도\ 복제본에서\ 원격\ 변경\ 전달\ 실습\ 기록 
+[main 4a16068] Docs: 별도 복제본에서 원격 변경 전달 실습 기록
+ 1 file changed, 2 insertions(+)
+
+$ git push origin main 
+To https://github.com/damagez7788-cyber/codyssey-mission02.git
+   aebb1e9..4a16068  main -> main
+
+$ git pull --ff-only origin main 
+From https://github.com/damagez7788-cyber/codyssey-mission02
+ * branch            main       -> FETCH_HEAD
+   aebb1e9..4a16068  main       -> origin/main
+Updating aebb1e9..4a16068
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+$ python3 -c from\ pathlib\ import\ Path\;\ text=Path\(\"README.md\"\).read_text\(encoding=\"utf-8\"\)\;\ assert\ \"복제\ 실습\ 확인:\"\ in\ text\;\ print\(\"원래\ 작업\ 폴더의\ README에\ 복제본\ 변경이\ 반영되었습니다.\"\) 
+원래 작업 폴더의 README에 복제본 변경이 반영되었습니다.
+
+$ git log --oneline --graph --all 
+* 4a16068 Docs: 별도 복제본에서 원격 변경 전달 실습 기록
+* aebb1e9 Docs: 실행 검증 로그와 쉬운 설명 및 데이터 구조 문서화
+* 4334ab9 Test: 재실행 데이터 유지와 손상 복구 및 예외 처리 18개 검사 추가
+* 9d07fe4 Feat: Ctrl+C와 입력 종료를 처리하고 완료된 데이터 안전 저장
+* d196db7 Feat: 미플레이 안내와 최고 점수 및 당시 정답 수 조회 구현
+* da4e3b0 Feat: 퀴즈 등록의 문제 선택지 정답 검사와 즉시 파일 저장 구현
+*   7047523 Merge: 퀴즈 풀기 기능을 main에 통합
+|\  
+| * 8c52a2d Feat: 별도 브랜치에서 출제와 정답 판정 및 최고 점수 갱신 구현
+|/  
+* ec39147 Feat: QuizGame 메뉴와 퀴즈 목록 및 상태 연결 구현
+* 46aea5c Feat: UTF-8 상태 저장과 손상 파일 보관 및 읽기쓰기 오류 처리
+* 673bd6f Feat: 개발 도구와 파이썬 기초의 기본 퀴즈 여섯 개 구성
+* a203057 Feat: Quiz 클래스의 문제 표시와 정답 확인 및 데이터 검증 구현
+* 4c98b5a Feat: 메뉴 선택과 빈 입력 및 숫자 범위 재입력 구현
+* d829987 Docs: 퀴즈 프로젝트 목표와 요구사항 및 지원 범위 등록
+
+$ git status --short 
+
+$ git config user.name 
+강준권
+
+$ git config user.email 
+350343401+damagez7788-cyber@users.noreply.github.com
+
+$ git remote -v 
+origin	https://github.com/damagez7788-cyber/codyssey-mission02.git (fetch)
+origin	https://github.com/damagez7788-cyber/codyssey-mission02.git (push)
+
+$ python3 --version 
+Python 3.14.4
+
+$ git --version 
+git version 2.53.0
