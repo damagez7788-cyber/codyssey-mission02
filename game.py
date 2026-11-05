@@ -58,6 +58,14 @@ class QuizGame:
         self.played = True
         self.save()
 
+    def show_score(self):
+        if not self.played:
+            print("아직 퀴즈를 풀지 않았습니다. 메뉴 1에서 도전해 보세요.")
+            return
+        print(f"최고 점수: {self.best_score}점")
+        if self.best_result is not None:
+            print(f"최고 기록 당시 {self.best_result['total']}문제 중 {self.best_result['correct']}문제 정답")
+
     def run(self):
         while True:
             print("\n개발 기초 퀴즈\n1. 퀴즈 풀기\n2. 퀴즈 추가\n3. 퀴즈 목록\n4. 점수 확인\n5. 종료")
@@ -72,5 +80,5 @@ class QuizGame:
                 self.add_quiz()
             elif choice == 3:
                 self.show_list()
-            else:
-                print("선택한 기능을 개발 중입니다.")
+            elif choice == 4:
+                self.show_score()
