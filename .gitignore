@@ -2,5 +2,6 @@ __pycache__/
 *.py[cod]
 state.json
 state.json.tmp
+.state-*.tmp
 state.corrupt-*.json
 .venv/
