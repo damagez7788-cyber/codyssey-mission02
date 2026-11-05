@@ -1,7 +1,8 @@
 """게임 전체의 메뉴와 데이터 흐름을 관리합니다."""
 from pathlib import Path
 
-from input_utils import read_number
+from input_utils import read_number, read_text
+from quiz import Quiz
 from storage import StateStore
 
 
@@ -20,6 +21,17 @@ class QuizGame:
             print("등록된 퀴즈가 없습니다. 메뉴 2에서 추가해 주세요.")
         for number, quiz in enumerate(self.quizzes, start=1):
             print(f"[{number}] {quiz.question}")
+
+    def add_quiz(self):
+        print("\n새 퀴즈를 등록합니다. 입력을 모두 끝내면 저장합니다.")
+        question = read_text("문제: ")
+        choices = [read_text(f"선택지 {number}: ") for number in range(1, 5)]
+        answer = read_number("정답 번호 (1~4): ", 1, 4)
+        self.quizzes.append(Quiz(question, choices, answer))
+        if self.save():
+            print("퀴즈를 추가하고 파일에 저장했습니다.")
+        else:
+            print("퀴즈는 현재 실행에만 추가됐습니다. 파일 저장은 실패했습니다.")
 
     def play(self):
         if not self.quizzes:
@@ -56,6 +68,8 @@ class QuizGame:
                 return
             if choice == 1:
                 self.play()
+            elif choice == 2:
+                self.add_quiz()
             elif choice == 3:
                 self.show_list()
             else:
