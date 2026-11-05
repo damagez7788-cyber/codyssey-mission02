@@ -1,0 +1,8 @@
+2026-11-05 코디세이 미션 2 상세 본문 확인 요약 (원문 전사 아님)
+Python 3.10+, 표준 라이브러리. Quiz/QuizGame 클래스. 4지선다 퀴즈 5개 이상.
+메뉴: 풀기/추가/목록/점수/종료. 공백/빈 입력/문자/범위 밖 입력 재입력.
+Ctrl+C/EOF 안전 종료. 파일 없음/손상/읽기쓰기 오류 처리.
+루트 state.json UTF-8: quizzes, best_score. 추가 퀴즈와 최고 점수 재실행 후 유지.
+실제 기능별 commit 10개 이상. 풀기 기능 별도 브랜치와 main 병합.
+init/add/commit/push/checkout/clone/pull, 복제본 수정→push→원래 폴더 pull 확인.
+README 개요/주제 이유/실행/기능/파일구조/데이터 설명. 환경/실행/Git 그래프 캡처.
