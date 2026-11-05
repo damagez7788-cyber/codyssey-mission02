@@ -1,0 +1,26 @@
+$ /usr/bin/python3 -m unittest discover -s tests -v
+test_add_and_restart_preserves_korean (test_game.QuizTests.test_add_and_restart_preserves_korean) ... ok
+test_atomic_replace_failure_preserves_file (test_game.QuizTests.test_atomic_replace_failure_preserves_file) ... ok
+test_bad_question_choices (test_game.QuizTests.test_bad_question_choices) ... ok
+test_bad_schema_is_recovered (test_game.QuizTests.test_bad_schema_is_recovered) ... ok
+test_corrupt_json_backup (test_game.QuizTests.test_corrupt_json_backup) ... ok
+test_ctrl_c_and_eof_save_completed_state (test_game.QuizTests.test_ctrl_c_and_eof_save_completed_state) ... ok
+test_empty_quiz_list (test_game.QuizTests.test_empty_quiz_list) ... ok
+test_failed_backup_blocks_overwrite (test_game.QuizTests.test_failed_backup_blocks_overwrite) ... ok
+test_first_run_defaults_and_score (test_game.QuizTests.test_first_run_defaults_and_score) ... ok
+test_menu_routes_and_normal_exit (test_game.QuizTests.test_menu_routes_and_normal_exit) ... ok
+test_number_retries_blank_text_and_range (test_game.QuizTests.test_number_retries_blank_text_and_range) ... ok
+test_partial_registration_is_not_added (test_game.QuizTests.test_partial_registration_is_not_added) ... ok
+test_play_score_persists_and_never_decreases (test_game.QuizTests.test_play_score_persists_and_never_decreases) ... ok
+test_quiz_validates_and_round_trips (test_game.QuizTests.test_quiz_validates_and_round_trips) ... ok
+test_read_failure_does_not_overwrite_original (test_game.QuizTests.test_read_failure_does_not_overwrite_original) ... ok
+test_text_retries_blank (test_game.QuizTests.test_text_retries_blank) ... ok
+test_write_failure_is_reported (test_game.QuizTests.test_write_failure_is_reported) ... ok
+test_zero_score_is_distinct_from_never_played (test_game.QuizTests.test_zero_score_is_distinct_from_never_played) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.039s
+
+OK
+
+exit_code=0

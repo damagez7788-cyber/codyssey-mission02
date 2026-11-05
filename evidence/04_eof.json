@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-05T09:06:11.227499+00:00",
+  "actor": "jarvis-assisted",
+  "command": [
+    "/usr/bin/python3",
+    "main.py"
+  ],
+  "cwd": "/tmp/tmp_mz363g3/quiz-demo",
+  "stdin": "",
+  "stdout": "저장된 퀴즈 7개와 최고 점수 100점을 불러왔습니다.\n\n개발 기초 퀴즈\n1. 퀴즈 풀기\n2. 퀴즈 추가\n3. 퀴즈 목록\n4. 점수 확인\n5. 종료\n선택: \n입력이 중단되었습니다. 완료된 내용까지 저장하고 종료합니다.\n현재 데이터를 저장했습니다.\n퀴즈를 종료합니다.\n",
+  "stderr": "",
+  "exit_code": 0
+}

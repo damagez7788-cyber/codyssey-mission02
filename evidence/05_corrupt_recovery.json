@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-05T09:06:11.227499+00:00",
+  "actor": "jarvis-assisted",
+  "command": [
+    "/usr/bin/python3",
+    "main.py"
+  ],
+  "cwd": "/tmp/tmp_mz363g3/quiz-demo",
+  "stdin": "3\n5\n",
+  "stdout": "데이터 손상: Expecting value: line 1 column 1 (char 0)\n원본을 state.corrupt-20261105-180612-572504.json에 보관하고 기본 데이터로 복구합니다.\n\n개발 기초 퀴즈\n1. 퀴즈 풀기\n2. 퀴즈 추가\n3. 퀴즈 목록\n4. 점수 확인\n5. 종료\n선택: \n등록된 퀴즈: 6개\n[1] Ubuntu에서 현재 폴더의 위치를 확인하는 명령은?\n[2] Dockerfile을 읽어 실행 준비물인 이미지를 만드는 작업은?\n[3] Git에서 내 컴퓨터에 변경 이력을 기록하는 명령은?\n[4] Python에서 여러 값을 순서대로 담는 자료형은?\n[5] 이름표와 값을 짝으로 저장하는 Python 자료형은?\n[6] JSON 파일에 데이터를 저장하는 이유는?\n\n개발 기초 퀴즈\n1. 퀴즈 풀기\n2. 퀴즈 추가\n3. 퀴즈 목록\n4. 점수 확인\n5. 종료\n선택: 현재 데이터를 저장했습니다.\n퀴즈를 종료합니다.\n",
+  "stderr": "",
+  "exit_code": 0
+}
