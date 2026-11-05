@@ -3,7 +3,12 @@ from game import QuizGame
 
 
 def main():
-    QuizGame().run()
+    game = QuizGame()
+    try:
+        game.run()
+    except (KeyboardInterrupt, EOFError):
+        print("\n입력이 중단되었습니다. 완료된 내용까지 저장하고 종료합니다.")
+        game.finish()
 
 
 if __name__ == "__main__":

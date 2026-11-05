@@ -71,8 +71,7 @@ class QuizGame:
             print("\n개발 기초 퀴즈\n1. 퀴즈 풀기\n2. 퀴즈 추가\n3. 퀴즈 목록\n4. 점수 확인\n5. 종료")
             choice = read_number("선택: ", 1, 5)
             if choice == 5:
-                self.save()
-                print("퀴즈를 종료합니다.")
+                self.finish()
                 return
             if choice == 1:
                 self.play()
@@ -82,3 +81,8 @@ class QuizGame:
                 self.show_list()
             elif choice == 4:
                 self.show_score()
+
+    def finish(self):
+        if self.save():
+            print("현재 데이터를 저장했습니다.")
+        print("퀴즈를 종료합니다.")
