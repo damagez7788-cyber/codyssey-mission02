@@ -1,0 +1,77 @@
+{
+  "environment": {
+    "checked_at_kst": "2026-11-14T02:35:04.863178+09:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-611-0_26.1112.611.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "os": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "benchmark_scope": "합성 4지선다; 시간은 추적 없이 3회 중앙값; 메모리는 별도 1회 tracemalloc Python 할당 피크(RSS 아님)"
+  },
+  "count": {
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=C:/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission02",
+      "rev-list",
+      "--count",
+      "HEAD"
+    ],
+    "stdin": null,
+    "stdout": "15\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  "head": {
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=C:/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission02",
+      "rev-parse",
+      "HEAD"
+    ],
+    "stdin": null,
+    "stdout": "c49e46c29101f3f6cf3806370970f6799570ac46\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  "commits": {
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=C:/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission02",
+      "log",
+      "--format=%h %s",
+      "HEAD"
+    ],
+    "stdin": null,
+    "stdout": "c49e46c Docs: 실제 복제 가져오기 증거와 VS Code 실행 결과 화면 추가\n4a16068 Docs: 별도 복제본에서 원격 변경 전달 실습 기록\naebb1e9 Docs: 실행 검증 로그와 쉬운 설명 및 데이터 구조 문서화\n4334ab9 Test: 재실행 데이터 유지와 손상 복구 및 예외 처리 18개 검사 추가\n9d07fe4 Feat: Ctrl+C와 입력 종료를 처리하고 완료된 데이터 안전 저장\nd196db7 Feat: 미플레이 안내와 최고 점수 및 당시 정답 수 조회 구현\nda4e3b0 Feat: 퀴즈 등록의 문제 선택지 정답 검사와 즉시 파일 저장 구현\n7047523 Merge: 퀴즈 풀기 기능을 main에 통합\n8c52a2d Feat: 별도 브랜치에서 출제와 정답 판정 및 최고 점수 갱신 구현\nec39147 Feat: QuizGame 메뉴와 퀴즈 목록 및 상태 연결 구현\n46aea5c Feat: UTF-8 상태 저장과 손상 파일 보관 및 읽기쓰기 오류 처리\n673bd6f Feat: 개발 도구와 파이썬 기초의 기본 퀴즈 여섯 개 구성\na203057 Feat: Quiz 클래스의 문제 표시와 정답 확인 및 데이터 검증 구현\n4c98b5a Feat: 메뉴 선택과 빈 입력 및 숫자 범위 재입력 구현\nd829987 Docs: 퀴즈 프로젝트 목표와 요구사항 및 지원 범위 등록\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  "branches": {
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=C:/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission02",
+      "branch",
+      "--list"
+    ],
+    "stdin": null,
+    "stdout": "  codex/quiz-play\n* main\n",
+    "stderr": "",
+    "exit_code": 0
+  },
+  "status": {
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=C:/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission02",
+      "status",
+      "--short"
+    ],
+    "stdin": null,
+    "stdout": " M README.md\n?? evidence/precheck_20261114/\n?? scripts/\n",
+    "stderr": "",
+    "exit_code": 0
+  }
+}

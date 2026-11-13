@@ -1,0 +1,26 @@
+{
+  "environment": {
+    "checked_at_kst": "2026-11-14T02:35:04.863178+09:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-611-0_26.1112.611.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "os": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "benchmark_scope": "합성 4지선다; 시간은 추적 없이 3회 중앙값; 메모리는 별도 1회 tracemalloc Python 할당 피크(RSS 아님)"
+  },
+  "tests_exit_code": 0,
+  "integration_passed": true,
+  "benchmark_passed": true,
+  "tracked_commit_count": 15,
+  "core_and_personal_state_unchanged": true,
+  "sha256": {
+    "main.py": "30498dda41a57061a311bec8f4de3feeaa113954478fa95e018dc81f5484f953",
+    "game.py": "1919fb2ed9c5ce5fb7f1deafbf27a88ab050590dd5731b1d2de5a18d34848e18",
+    "quiz.py": "02e8b63e9bbc8c53276eeb4c2bb679437a3cb83d0875f9c83a638965b7f47d52",
+    "input_utils.py": "903e7c3a61095b43c229be6b6ce7221b8f09356795423a9cb123873fe7c44b5e",
+    "defaults.py": "4cd759b3d0acfefd8b54ddf3e0862b8003c1017b23a0a87aa64f542ad41f0156",
+    "storage.py": "ee760fbf8951587ec3dc8b9070e68baffd73cadb6ce55d8edbac301264b6d4b8",
+    "state.json": null
+  },
+  "platform_reevaluation": "플랫폼 재평가 미실시",
+  "github_update": "미실시"
+}

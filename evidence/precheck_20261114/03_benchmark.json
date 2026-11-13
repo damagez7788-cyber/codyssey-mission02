@@ -1,0 +1,80 @@
+{
+  "environment": {
+    "checked_at_kst": "2026-11-14T02:35:04.863178+09:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-611-0_26.1112.611.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "os": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "benchmark_scope": "합성 4지선다; 시간은 추적 없이 3회 중앙값; 메모리는 별도 1회 tracemalloc Python 할당 피크(RSS 아님)"
+  },
+  "results": [
+    {
+      "quiz_count": 1000,
+      "json_bytes": 289114,
+      "trials": 3,
+      "warmup": 1,
+      "searches_per_trial": 100,
+      "save_ms": [
+        69.64090000838041,
+        71.01280000642873,
+        69.27569999243133
+      ],
+      "load_ms": [
+        38.99689999525435,
+        39.4934999931138,
+        45.14199998811819
+      ],
+      "linear_last_hit_ms": [
+        0.1014320002286695,
+        0.10492799978237599,
+        0.13270299998112023
+      ],
+      "linear_miss_ms": [
+        0.0949560001026839,
+        0.07048500003293157,
+        0.1356570000643842
+      ],
+      "median_save_ms": 69.64090000838041,
+      "median_load_ms": 39.4934999931138,
+      "median_linear_last_hit_ms": 0.10492799978237599,
+      "median_linear_miss_ms": 0.0949560001026839,
+      "save_python_peak_bytes": 233428,
+      "load_python_peak_bytes": 2033653,
+      "roundtrip_all_fields_equal": true
+    },
+    {
+      "quiz_count": 10000,
+      "json_bytes": 2890116,
+      "trials": 3,
+      "warmup": 1,
+      "searches_per_trial": 100,
+      "save_ms": [
+        783.6410000163596,
+        556.9576999987476,
+        613.0415999796242
+      ],
+      "load_ms": [
+        167.72089997539297,
+        240.32620000070892,
+        208.53340000030585
+      ],
+      "linear_last_hit_ms": [
+        1.332403999986127,
+        1.714773999992758,
+        1.8049130000872537
+      ],
+      "linear_miss_ms": [
+        1.3567060002242215,
+        1.9721749998279847,
+        1.6303709999192506
+      ],
+      "median_save_ms": 613.0415999796242,
+      "median_load_ms": 208.53340000030585,
+      "median_linear_last_hit_ms": 1.714773999992758,
+      "median_linear_miss_ms": 1.6303709999192506,
+      "save_python_peak_bytes": 1966556,
+      "load_python_peak_bytes": 20240571,
+      "roundtrip_all_fields_equal": true
+    }
+  ]
+}
